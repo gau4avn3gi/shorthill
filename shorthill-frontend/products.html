@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Products App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Products</h2>
+    <button id="addBtn" class="add-btn">Add Product</button>
+
+    <table id="productsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th id="actionsHeader">Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <form id="productForm">
+        <input type="hidden" id="productId">
+        <input type="text" id="productName" placeholder="Name" required>
+        <input type="text" id="productDesc" placeholder="Description">
+        <input type="number" id="productPrice" placeholder="Price" required>
+        <input type="number" id="productStock" placeholder="Stock" required>
+        <button type="submit" id="saveProductBtn">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+</body>
+</html>

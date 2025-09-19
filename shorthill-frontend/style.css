@@ -1,0 +1,235 @@
+/* --- Existing Login/Register Styling --- */
+
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Centered container for login/register */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Box styling */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 28px;
+}
+
+.sub-title {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Form styling */
+form input,
+form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37,117,252,0.5);
+  outline: none;
+}
+
+/* Button styling */
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Text links */
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-text a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* --- Products Page Styling --- */
+
+/* Container for products */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Page heading */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Add Product Button */
+.add-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons inside table */
+button.editBtn, button.deleteBtn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+
+button.editBtn {
+  background-color: #28a745;
+}
+
+button.editBtn:hover {
+  background-color: #218838;
+}
+
+button.deleteBtn {
+  background-color: #dc3545;
+}
+
+button.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 10px; top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Modal form inputs */
+#productForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+#productForm button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#productForm button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
